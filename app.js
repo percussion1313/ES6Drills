@@ -31,7 +31,11 @@ let total = ((p1, p2) => ({
 
 console.log(`${total.squared} ${total.product}`)
 
+//Spread Syntax
+myFavFood = (name, location, favFood) => {
+    return name + location+ favFood;
+}
+let arr = ['Captain Holt','New York','Plain Toast'];
 
-
-
+console.log(...arr)
 
