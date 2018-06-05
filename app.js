@@ -1,10 +1,10 @@
 // Template Literals and Default Parameters Value
-/*function favMovie(movie = 'The Room', name = 'The World') {
+function favMovie(movie = 'The Room', name = 'The World') {
     console.log(`My name is ${name} and my favorite movie is ${movie}`);
 }
-favMovie();*/
+favMovie();
 
-//Arrow Functions
+//~Arrow Functions~
 
 //Concise version
 favMovie = (name = 'World', movie = 'The Room') => console.log(`My name is ${name} and my favorite movie is ${movie}`);
@@ -31,6 +31,8 @@ let total = ((p1, p2) => ({
 
 console.log(`${total.squared} ${total.product}`)
 
+
+
 //Spread Syntax
 myFavFood = (name, location, favFood) => {
     return name + location+ favFood;
@@ -38,4 +40,34 @@ myFavFood = (name, location, favFood) => {
 let arr = ['Captain Holt','New York','Plain Toast'];
 
 console.log(...arr)
+
+//or
+
+myFavFood = (name, location, favFood) => (`${name}${location}${favFood}`)
+let arr = ['Captain Holt','New York','Plain Toast'];
+
+console.log(...arr)
+
+var myName = 'Peter'
+let myNameFunction = (personName) => {
+    let chars = [...personName];
+    for (i = 0; i < chars.length; i++ ) {
+        console.log(chars[i])
+    }
+}
+
+myNameFunction(name);
+
+//Or
+
+var myName = 'Peter'
+let myNameFunction = (personName) => {
+    let stringArr = [...personName];
+    stringArr.forEach(character => {
+        console.log(character)
+    }) 
+}
+
+myNameFunction(myName);
+
 
