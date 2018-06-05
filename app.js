@@ -12,5 +12,17 @@ favMovie = (name ='World', movie = 'The Room') => console.log(`My name is ${name
 
 favMovie();
 
+//First Name Function 1
+let getFirstName = (fullName) => {
+    return fullName.split(' ')[0]
+}; 
+console.log(getFirstName('Peter Grant'));
+
+//Concise Version
+let getFirstNameTwo = (fullName) => fullName.split(' ');
+console.log(getFirstNameTwo('Peter Grant'));
+
+
+
 
 
